@@ -1,0 +1,677 @@
+/*!
+Theme Name: Bird blokes
+Theme URI: https://them.es/starter
+Author: GVM Technologies
+Author URI: https://gvmtechnologies.com/
+Description: 
+Version: 3.5.3
+Requires at least: 5.0
+Tested up to: 6.6
+Requires PHP: 7.2
+License: GPL version 2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0
+Tags: custom-background, custom-colors, featured-images, flexible-header, microformats, post-formats, rtl-language-support, theme-options, translation-ready, accessibility-ready
+Text Domain: birdblokes
+*/
+
+/* Don't overwrite this file. Compile "/assets/main.scss" to "/build/main.css" */
+
+/* From http://codex.wordpress.org/CSS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  max-width: 96%; /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+.gallery-item {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  width: 50%;
+}
+
+.gallery-item a,
+.gallery-item a:hover,
+.gallery-item a:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.gallery-item a img {
+  display: block;
+  -webkit-transition: -webkit-filter 0.2s ease-in;
+  transition: -webkit-filter 0.2s ease-in;
+  transition: filter 0.2s ease-in;
+  transition: filter 0.2s ease-in, -webkit-filter 0.2s ease-in;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.gallery-item a:hover img,
+.gallery-item a:focus img {
+  -webkit-filter: opacity(60%);
+  filter: opacity(60%);
+}
+
+.gallery-caption {
+  display: block;
+  text-align: left;
+  padding: 0 10px 0 0;
+  margin-bottom: 0;
+}
+
+.gallery-columns-1 .gallery-item {
+  max-width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+  max-width: 33%;
+}
+
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+  display: none;
+}
+
+.bypostauthor {
+  font-weight: bold;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Header Page */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+div,
+span {
+  font-family: "Poppins", sans-serif;
+}
+nav#header {
+background: #141414!important;
+}
+
+ul#menu-main-menu li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20.01px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+.setAlign {
+  display: block !important;
+  text-align: center;
+  padding: 15px 22px;
+}
+.navbar-brand img {
+	height: 48px !important;
+ }
+div#navbar {
+  justify-content: center;
+}
+
+.headerTopNews p {
+  background: #eeb78e;
+  margin: 0px !important;
+  padding: 8px;
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25.5px;
+  text-align: center;
+}
+ul#menu-main-menu {
+	gap: 40px;
+  padding: 10px;
+}
+
+.headerForm{
+	width: 50% !important;
+	border: 1px solid;
+	border-radius: 45px;
+}
+.headerForm input.form-control {
+	background: #232323;
+ }
+ .addborder{
+	border: none !important;
+	border-radius: 45px !important;
+    height: 45px !important;
+    padding: 0px 0px 2px 21px !important;
+ }
+ .search-form{
+	display: flex;
+	justify-content: center;
+	padding: 20px 0px;
+ }
+ #formBtn{
+	border: none !important;
+ }
+ input::placeholder {
+	
+font-size: 13px;
+font-weight: 400;
+line-height: 15.08px;
+letter-spacing: 0.01em;
+
+color: #fff !important;
+ }
+ 
+ .fa-search{
+	margin: 10px !important;
+ }
+ .fa-search:before {
+	content: "\f002";
+	color: #fff;
+	font-size: 20px;
+ }
+
+
+
+
+
+ /* Footer page */
+
+.footerbg{
+	color: #fff !important;
+  padding: 32px 0px !important;
+}
+
+.listItemfooter{
+	list-style: none;
+	padding-left: 0px;
+	line-height: 32px;
+	margin-top: 30px;
+	text-transform: capitalize;
+	font-size: 16px;
+}
+
+.mailtext{
+	margin-top: 32px;
+	font-size: 15px;
+}
+.Socialicon{
+	margin-top: 32px;
+	gap: 18px;
+	display: flex;
+	font-size: 23px;
+}
+
+#main{
+	margin-top: 0px !important;
+}
+.setposition {
+	position: relative;
+}
+
+.HomeImage{
+	position: absolute;
+	top: 24%;
+	right: 9%;
+}
+
+.HomeImage h3{
+font-size: 55px;
+font-weight: 900;
+line-height: 85.88px;
+text-align: left;
+
+}
+
+.HomeImage h5{
+font-size: 30px;
+font-weight: 800;
+line-height: 40.26px;
+text-align: left;
+
+}
+
+.HomeImage p{
+
+font-size: 18px;
+font-weight: 400;
+line-height: 30.27px;
+letter-spacing: 0.08em;
+text-align: left;
+
+}
+
+.viewBtn{
+	padding: 10px 30px;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 33.64px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    border: solid #000;
+}
+button.viewBtn:hover {
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.imageBox{
+  position: absolute;
+    bottom: 0%;
+    padding: 29px 4px 10px 37px;
+    background: rgba(255, 255, 255, 0.9);
+    width: -webkit-fill-available;
+}
+
+.wp-block-uagb-image.aligncenter.uagb-block-440c1f9e.wp-block-uagb-image--layout-default.wp-block-uagb-image--effect-static.wp-block-uagb-image--align-center {
+  margin: 0px;
+}
+
+.againBox{
+  position: absolute;
+  top: 4%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 26px 5px;
+}
+
+.againBox h3{
+  font-size: 50px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: center;
+
+}
+.againBox h5{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 39.13px;
+  text-align: center;
+
+}
+
+.againBox p{
+font-size: 18px;
+font-weight: 500;
+line-height: 30.27px;
+text-align: center;
+}
+
+
+  .wp-block-button.productBtn a {
+    background: #000;
+    border: none;
+    font-size: 16px;
+    padding: 9px 18px;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+.wp-block-button.productBtn a:hover{
+  background-color: rgba(131, 68, 21, 1);
+}
+
+.price{
+  color: rgba(238, 183, 142, 1) !important;
+}
+.protitle{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.04px;
+  letter-spacing: 0.08em;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top:8px;
+
+}
+
+.viewsBtn{
+	padding: 10px 30px;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 33.64px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    border: solid #000;
+}
+button.viewsBtn:hover {
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.swooningbg{
+  background: rgba(238, 183, 142, 1);
+  padding: 25px 55px;
+  margin-top: 65px !important;
+  margin-bottom: 0px !important;
+}
+
+.swooningbg h3{
+
+font-weight: 700;
+line-height: 57.73px;
+text-align: center;
+    font-size: 46px;
+    color: rgba(0, 0, 0, 1);
+    margin-top: 14px;
+  }
+
+  .swooningbg p{
+    color: rgba(0, 0, 0, 1);
+    
+  }
+
+.wp-block-column.btnsection.is-layout-flow.wp-block-column-is-layout-flow{
+  margin-top: 50px !important;
+  text-align: right;
+}
+
+.newsLetter{
+  background: rgba(243, 204, 175, 0.28);
+}
+
+.newsLetter h3{
+font-size: 48px;
+font-weight: 700;
+line-height: 68.25px;
+text-align: left;
+
+}
+
+/* newsletter */
+
+.newslettertext{
+  padding: 14px 63px;
+}
+
+.newslettertext  h3{
+font-size: 48px;
+font-weight: 700;
+line-height: 68.25px;
+text-align: left;
+color: rgba(0, 0, 0, 1);
+margin-bottom: 0px;
+}
+
+.newslettertext p {
+font-size: 13px !important;
+font-weight: 400;
+line-height: 26.91px;
+letter-spacing: 0.08em;
+text-align: left;
+color: rgba(0, 0, 0, 1);
+}
+
+.newsletterform{
+  margin-top: 50px;
+  display: flex;
+
+}
+
+.newsletterform i{
+  background: rgba(0, 0, 0, 1);
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+input[type="email"]{
+  height: 44px;
+  color: #000 !important;
+  padding-left: 10px;
+  outline: none;
+}
+input[type="email"]::placeholder{
+  color: #000 !important;
+}
+
+.socialmedia{
+  position: absolute;
+  top: 0%;
+  padding: 40px 12px 18px 16px;
+  color: #Fff;
+  font-size: 14px;
+
+}
+.gpremove{
+  gap: 0 !important;
+  margin-bottom: 0px !important;
+}
