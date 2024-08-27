@@ -671,7 +671,32 @@ input[type="email"]::placeholder{
   font-size: 14px;
 
 }
+
 .gpremove{
   gap: 0 !important;
   margin-bottom: 0px !important;
+}
+
+.wp-block-uagb-image.aligncenter.uagb-block-3a52d9c9.wp-block-uagb-image--layout-default.wp-block-uagb-image--effect-static.wp-block-uagb-image--align-center {
+  margin-top: 0px !important;
+}
+.newsletterformfooter input[type="email"]{
+  border: none;
+}
+.newsletterformfooter i{
+  background: hsl(25 74% 75% / 1);
+  color: #000;
+  padding: 9px 12px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.newsletterformfooter{
+  display: flex;
+  gap: 0px !important;
+  background: hsl(25 74% 75% / 1);
+}
+.headerForm i{
+  margin-left: -31px !important;
+    z-index: 99;
+    line-height: 23px;
 }
